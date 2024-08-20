@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        .question {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          font-size: 16px;
+          transition: 0.4s;
+        }
+        .question:after {
+            content: '\002B';
+            float: right;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+        
+        .active, .question:hover {
+          background-color: #ccc;
+        }
+        
+        .answer {
+          padding: 0 18px;
+          background-color: white;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+        <button class="question" >Question 1</button>
+        <div class="answer"><p>This is the expected answer.</p></div>
+
+        <button class="question">Question 2</button>
+        <div class="answer"><p>This is the expected answer.</p></div>
+
+        <button class="question">Question 3</button>
+        <div class="answer"><p>This is the expected answer.</p></div>
+
+        <button class="question">Question 4</button>
+        <div class="answer"><p>This is the expected answer.</p></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
